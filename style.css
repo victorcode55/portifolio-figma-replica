@@ -1,0 +1,294 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    color: #21243d;
+    background-color: #e5e5e5;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.portfolio {
+    width: 100%;
+    max-width: 850px;
+    margin: 10px auto;
+    background-color: white;
+}
+
+/* APRESENTACAO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px 55px 35px;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 30px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.perfil {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #ff6464;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #e94f4f;
+}
+
+/* FORMACOES */
+.formacoes {
+    background-color: #edf7fa;
+    padding: 20px 55px 25px;
+}
+
+section h2 {
+    font-size: 17px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.formacoes-lista {
+    display: flex;
+    gap: 20px;
+}
+
+.cartao {
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 3px 8px #00000008;
+}
+
+.cartao h3 {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.cartao p {
+    font-size: 12px;
+}
+
+.data {
+    margin-bottom: 15px;
+}
+
+.data span {
+    margin: 0 10px;
+    color: #8695a4;
+}
+
+/* EXPERIENCIAS */
+.experiencias {
+    padding: 20px 55px;
+}
+
+.experiencia {
+    display: flex;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.experiencia img {
+    width: 180px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.experiencia div {
+    flex: 1;
+    min-width: 0;
+}
+
+.experiencia h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.experiencia p {
+    font-size: 12px;
+}
+
+.detalhes {
+    margin-bottom: 12px;
+    color: #8695a4;
+}
+
+.detalhes strong {
+    display: inline-block;
+    background-color: #142850;
+    color: white;
+    padding: 1px 8px;
+    border-radius: 15px;
+    margin-right: 12px;
+}
+
+/* SKILLS */
+.skills {
+    background-color: #edf7fa;
+    padding: 20px 55px 30px;
+}
+
+.skills-lista {
+    display: flex;
+    gap: 20px;
+}
+
+.skill {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+    background-color: white;
+    padding: 25px 20px;
+}
+
+.icone {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skill h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.skill p {
+    font-size: 12px;
+}
+
+/* RODAPE */
+.rodape {
+    text-align: center;
+    padding: 25px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #21243d;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.rodape p {
+    font-size: 10px;
+}
+
+/* CELULAR */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: white;
+    }
+
+    .portfolio {
+        margin: 0 auto;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+        padding: 35px 25px 30px;
+    }
+
+    .perfil {
+        width: 110px;
+        height: 110px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .formacoes {
+        padding: 20px;
+    }
+
+    .formacoes-lista {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cartao {
+        padding: 18px;
+    }
+
+    .experiencias {
+        padding: 20px;
+    }
+
+    .experiencia {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .experiencia img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .experiencia h3 {
+        font-size: 18px;
+    }
+
+    .skills {
+        padding: 20px;
+    }
+
+    .skills-lista {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .rodape {
+        padding: 30px 15px;
+    }
+}
